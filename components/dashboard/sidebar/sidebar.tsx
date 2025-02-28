@@ -1,3 +1,5 @@
+"use client";
+
 import { SidebarContainer } from "./container";
 import { SidebarItemNavigation } from "./item-navigation";
 import { SidebarMainText } from "../main-text";
