@@ -15,11 +15,11 @@ export const LeftCardDashboard = ({
 }: LeftCardDashboardProps) => {
   return (
     <LeftCardContainer>
-      <SidebarMainText title="Ingresos totales" bgColor="bg-slate-500"/>
+      <SidebarMainText title="Ingresos totales" bgColor="bg-slate-800"/>
 
       <div className="flex flex-col items-center space-y-4 z-10">
         <p className="mt-4 text-4xl font-bold">
-          <span className="rounded-md bg-slate-500 text-white px-2 py-1 mr-2">ARS</span>
+          <span className="rounded-md bg-slate-500 text-white px-2 py-[1px] mr-2">ARS</span>
           {formatNumber(incomingEarnings)}
         </p>
         <div className="flex gap-2 justify-between items-center w-full">
