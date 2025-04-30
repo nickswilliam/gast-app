@@ -1,11 +1,16 @@
+import { CardsWrapper } from "@/components/dashboard/first-card/cards-wrapper"
+import { CardsWrapperBottom } from "@/components/dashboard/second-card/cards-wrapper"
+import { TextSectionDescription } from "@/components/dashboard/text-section-description"
 
-import { SidebarMainText } from '@/components/dashboard/main-text'
-import React from 'react'
 
 const DashboardPage = () => {
   return (
-    <section className="relative top-0 flex flex-col items-center h-[calc(100vh - 54px)] w-full">
-      <SidebarMainText title="Dashboard" />
+    <section className="flex flex-col items-center w-full px-6 py-8 space-y-4">
+      <TextSectionDescription title="Ingresos"/>
+      <CardsWrapper/>
+
+      <TextSectionDescription title="Gastos"/>
+      <CardsWrapperBottom/>
     </section>
   )
 }
